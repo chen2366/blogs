@@ -12,17 +12,17 @@
 #### 基本增删改查
 
 ##### 插入数据
-`INSERT INTO \`user\` ('id', 'name', 'gander') VALUES ('1', '张三', '男');`
-`INSERT INTO \`user\` ('1', '张三', '男');`
+`INSERT INTO user ('id', 'name', 'gander') VALUES ('1', '张三', '男');`
+`INSERT INTO user ('1', '张三', '男');`
 
 ##### 更新数据
-`UPDATE \`user\` SET name='李四', gander='女' WHERE id = 1;`
+`UPDATE user SET name='李四', gander='女' WHERE id = 1;`
 
 ##### 删除数据
-`DELETE FROM \`user\` WHERE id = 1;`
+`DELETE FROM user WHERE id = 1;`
 
 ##### 查询
-`SELECT * FROM \`user\`;`
+`SELECT * FROM user;`
 
 #### 常用查询
 1. 使用数据中的一个字段更新另一个字段
