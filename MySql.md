@@ -1,4 +1,33 @@
 ## MYSQL 学习笔记
+
+### sql语句备忘
+
+#### 数据库操作
+
+#####更新数据库密码
+1. `SET PASSWORD FOR 'root'@'localhost' = PASSWORD('newpass');`
+2. `use mysql;UPDATE user SET Password = PASSWORD('newpass') WHERE user = 'root';FLUSH PRIVILEGES;`
+
+
+#### 基本增删改查
+
+##### 插入数据
+`INSERT INTO \`user\` ('id', 'name', 'gander') VALUES ('1', '张三', '男');`
+`INSERT INTO \`user\` ('1', '张三', '男');`
+
+##### 更新数据
+`UPDATE \`user\` SET name='李四', gander='女' WHERE id = 1;`
+
+##### 删除数据
+`DELETE FROM \`user\` WHERE id = 1;`
+
+##### 查询
+`SELECT * FROM \`user\`;`
+
+#### 常用查询
+1. 使用数据中的一个字段更新另一个字段
+`UPDATE a INNER JOIN b on a.bid=b.id SET a.x=b.x,a.y=b.y ;`
+
 ### 视图
 #### 学习视图的目的：
 简化查询操作，在设计数据库的时候可以分表设计，使用视图来组装对象所需要的数据，可以兼顾灵活性和便利性。
