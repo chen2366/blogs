@@ -7,7 +7,7 @@
 2. [GIT](GIT.md)
 
 ### 经验总结
-1. [Ajax上传图片或文件](ajaxupload.md)
+1. [Ajax上传图片或文件](AjaxUpload.md)
 2. [SublimeText 使用技巧](SublimeText.md)
 
 ## 工具篇
