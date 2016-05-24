@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Ajax Uploader</title>
+</head>
+<body>
+    <!-- 上传文件代码 start -->
+    <!--上传文件按钮-->
+    <button id="uploadBtn" class="btn btn-large btn-primary">Choose File</button>
+    <!--返回消息框-->
+    <div id="progressOuter" class="progress progress-striped active" style="display:none;"></div>
+    <div id="msgBox"></div>
+
+    <script>
+        var upload_url = '/../server/upload.php'; // 定义上传文件地址，根据实际控制器地址修改
+    </script>
+    <script src="js/SimpleAjaxUploader.js"></script>
+    <script src="js/upload.js"></script>
+    <!-- 上传文件代码 end -->
+</body>
+</html>
