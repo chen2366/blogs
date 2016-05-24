@@ -1,14 +1,14 @@
 # Git
 
 ## Git使用技巧
-### 制作补丁
+### 制作FTP上传补丁
 1. 下载程序源码到本地，对程序文件进行版本控制。`git init`
 2. 修改并提交到版本库。
-3. 查看版本日志
-4. 从最初版本新建分支：buding-**
-5. 切换到buding-**分支
-6. 合并master分支到buding-**,合并分支的时候选择 No Fast Forward
-7. 显示日志，即可查看所有修改，选中所有修改文件，右键 export selection to... 导出所有修改文件到指定文件夹
-8. 将补丁文件上传至服务器即可。（导出的补丁文件位置和服务器的位置是对应的所以直接覆盖就可以）
+3. 在根目录右键/TortoiseGit/Diff with previous vision;选择对应的分支和版本（vision1选择最新的，vision2选择起始版本，先选择分支，再选择版本）;对话框下方即差异文件，全选/右键/Export selectioin to...;选择目录并保存.
+![diff](images/20160524145704.png)
+![diff2](images/20160524150015.png)
+![diff2](images/20160524150553.png)
+
+4. 将补丁文件上传至服务器即可。（导出的补丁文件位置和服务器的位置是对应的所以直接覆盖就可以）
 
 \*注:使用工具Git TortoiseGit
