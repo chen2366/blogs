@@ -1,4 +1,8 @@
-# Html编码规范
+# 前端开发规范与约定
+
+## 文件编码
+
+1. 所有文本文件同一采用UTF-8编码.
 
 ## 文件与目录命名约定
 
@@ -6,11 +10,7 @@
 2. js和css压缩文件名同一使用.min结尾，如：xxx.min.js.
 3. 该命名规范适用于html,css,js,swf,jpg,php,xml,png,gif,jpg,ico等文件类型.
 
-## 文件编码
-
-1. 所有文本文件同一采用UTF-8编码.
-
-## id 和 class 命名约定
+## id和class命名约定
 
 1. id和class名称一律小写, 多个单词用连字符(-)连接, 比如 recommend-presents.
 2. id和class名称中只能出现小写的 26 个英文字母、数字和连字符(-), 严禁出现任何其它字符.
@@ -20,5 +20,5 @@
 
 ## HTML规范
 
-1. [HTML 编码规范](http://docs.kissyui.com/1.3/docs/html/tutorials/style-guide/html-coding-style.html).
-2. 完成的网页代码符合[W3C标准](https://www.w3.org/).
+1. [HTML编码规范](https://github.com/fex-team/styleguide/blob/master/html.md)、[HTML 编码规范(经验)](http://docs.kissyui.com/1.3/docs/html/tutorials/style-guide/html-coding-style.html).
+2. 完成的网页代码符合[W3C标准](https://www.w3.org/).W3C验证工具:[Unicorn](https://validator.w3.org/)
