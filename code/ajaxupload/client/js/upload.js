@@ -8,13 +8,16 @@ function escapeTags(str) {
 }
 
 window.onload = function () {
+    // 监听上传按钮
+    var uploader = upload('uploadBtn', 'msgBox');
+};
 
-    var btn = document.getElementById('uploadBtn'),
-        progressBar = document.getElementById('progressBar'),
-        progressOuter = document.getElementById('progressOuter'),
-        msgBox = document.getElementById('msgBox');
+function upload(uploadBtn, msgBox)
+{
+    var btn    = document.getElementById(uploadBtn);
+    var msgBox = document.getElementById(msgBox);
 
-    var uploader = new ss.SimpleUpload({
+    return new ss.SimpleUpload({
         button: btn,
         url: upload_url,
         name: 'uploadfile',
@@ -22,17 +25,12 @@ window.onload = function () {
         hoverClass: 'hover',
         focusClass: 'focus',
         responseType: 'json',
-        startXHR: function () {
-            progressOuter.style.display = 'block'; // make progress bar visible
-            this.setProgressBar(progressBar);
-        },
         onSubmit: function () {
             msgBox.innerHTML = ''; // empty the message box
             btn.innerHTML = 'Uploading...'; // change button text to "Uploading..."
         },
         onComplete: function (filename, response) {
             btn.innerHTML = 'Choose Another File';
-            progressOuter.style.display = 'none'; // hide progress bar when upload is completed
 
             if (!response) {
                 msgBox.innerHTML = 'Unable to upload file';
@@ -52,8 +50,7 @@ window.onload = function () {
             }
         },
         onError: function () {
-            progressOuter.style.display = 'none';
             msgBox.innerHTML = 'Unable to upload file';
         }
     });
-};
+}
