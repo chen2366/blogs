@@ -17,6 +17,7 @@
 3. id和class尽量用英文单词命名.确实找不到合适的单词时, 可以考虑使用拼音.
 4. 在不影响语义的情况下, id和class名称中可以适当采用英文单词缩写, 比如:col,nav,hd,bd,ft等, 但切忌自造缩写.
 5. id和class名称中的第一个词必须是单词全拼或语义非常清晰的单词缩写, 比如 present,col.
+6. [命名总结](CommonHtmlNames.md)
 
 ## HTML规范
 
