@@ -7,11 +7,6 @@ function escapeTags(str) {
         .replace(/>/g, '&gt;');
 }
 
-window.onload = function () {
-    // 监听上传按钮
-    var uploader = upload('uploadBtn', 'msgBox');
-};
-
 function upload(uploadBtn, msgBox)
 {
     var btn    = document.getElementById(uploadBtn);
