@@ -6,6 +6,7 @@
 1. [Mysql](MySql.md)
 2. [GIT](GIT.md)
 3. [前端开发规范](FrontendStandard.md)
+4. [常用程序命名](Names.md)
 
 ### 经验总结
 1. [Ajax上传图片或文件](AjaxUpload.md)
