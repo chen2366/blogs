@@ -17,14 +17,14 @@ control|ctrl|控制
 decode|dec|解码
 define|def|定义
 delete|del|删除
-destination|dst或dest|
+destination|dst或dest|目的地
 display|disp|显示
 division|div|区块
 encode|enc|编码
 environment|env|环境
 error|err|错误
 float|flt|浮动
-frequency|freq|
+frequency|freq|频率
 header|hdr|头
 index|idx|索引
 image|img|图像
