@@ -52,3 +52,15 @@
 
 * 删除视图
 > DROP VIEW IF EXISTS view_name
+
+## 查询优化
+
+* 分页查询优化(当查询表中记录比较多的时候，使用limit查询时间随着起始记录的增加)
+
+原理：limit查询时间跟记录起始位置成正比；查询主键的时间比查询整条记录时间短。
+
+方法1：使用where条件判断
+`SELECT * FROM table_name WHERE id >= (SELECT id FROM table_name LIMIT 1000000,1) limit 20;`
+
+方法2：使用join连表
+`SELECT * FROM table_name a JOIN (SELECT id FROM table_name LIMIT 100000, 20) b ON a.id = b.id;`
