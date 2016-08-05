@@ -62,3 +62,14 @@
 
 * 方法2：使用JOIN连表
 `SELECT * FROM table a JOIN (SELECT id FROM table_name LIMIT 100000, 20) b ON a.id = b.id`
+
+
+## 数据库维护操作
+
+### 数据库远程访问权限
+```
+GRANT ALL PRIVILEGES ON 数据库名.数据表明 TO '用户名'@'%'IDENTIFIED BY '密码' WITH GRANT OPTION;
+
+GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%'IDENTIFIED BY 'mypassword' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+```
