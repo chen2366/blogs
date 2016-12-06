@@ -12,6 +12,7 @@
 1. [Ajax上传图片或文件](AjaxUpload.md)
 2. [SublimeText 使用技巧](SublimeText.md)
 3. [Laravel 学习笔记](Laravel.md)
+4. [JavaScript 技巧](Javascript.md)
 
 ## 工具篇
 ### 编码工具
