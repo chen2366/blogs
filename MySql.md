@@ -73,3 +73,12 @@ GRANT ALL PRIVILEGES ON 数据库名.数据表明 TO '用户名'@'%'IDENTIFIED B
 GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%'IDENTIFIED BY 'mypassword' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
+## 技巧
+
+### 蠕虫复制示例
+```
+\# 格式如：
+INSERT into 表名(字段1,字段2,字段3) select 字段1,字段2,字段3 from 表名; -- 字段为非唯一字段
+
+INSERT into user_info(version,create_user_count,create_pc_count) select version,create_user_count,create_pc_count from user_info;
+```
