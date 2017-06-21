@@ -82,3 +82,10 @@ INSERT into 表名(字段1,字段2,字段3) select 字段1,字段2,字段3 from 
 
 INSERT into user_info(version,create_user_count,create_pc_count) select version,create_user_count,create_pc_count from user_info;
 ```
+
+### 查看表结构
+```
+# 仅查看表名和注释
+select column_name, column_comment from information_schema.columns where table_schema ='db' and table_name = 'tablename' ;
+```
+
