@@ -29,12 +29,14 @@
 `UPDATE a INNER JOIN b on a.bid=b.id SET a.x=b.x,a.y=b.y `
 
 * 创建临时表
+```
 DROP TABLE IF EXISTS tmp_coop;
 CREATE TEMPORARY TABLE tmp_coop (
 	id INTEGER NOT NULL PRIMARY KEY,
   attitude TINYINT NOT NULL,
   coop_status TINYINT NOT NULL
 );
+```
 
 ### 视图
 #### 学习视图的目的：
