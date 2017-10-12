@@ -28,6 +28,14 @@
 * 使用数据中的一个字段更新另一个字段：
 `UPDATE a INNER JOIN b on a.bid=b.id SET a.x=b.x,a.y=b.y `
 
+* 创建临时表
+DROP TABLE IF EXISTS tmp_coop;
+CREATE TEMPORARY TABLE tmp_coop (
+	id INTEGER NOT NULL PRIMARY KEY,
+  attitude TINYINT NOT NULL,
+  coop_status TINYINT NOT NULL
+);
+
 ### 视图
 #### 学习视图的目的：
 简化查询操作，在设计数据库的时候可以分表设计，使用视图来组装对象所需要的数据，可以兼顾灵活性和便利性。
