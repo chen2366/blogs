@@ -10,6 +10,8 @@
 
 
 #### 基本增删改查
+* 新建数据库：   
+`CREATE DATABASE IF NOT EXISTS my_db default charset utf8 COLLATE utf8_general_ci;`   
 
 * 插入数据：
 `INSERT INTO user ('id', 'name', 'gander') VALUES ('1', '张三', '男')`、
